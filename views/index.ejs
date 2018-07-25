@@ -1,0 +1,44 @@
+<%- include('header') %>
+        <div id="content" class="site-content">
+            <div class="container main-content-area">
+                <div class="row side-pull-left">
+                    <div class="main-content-inner col-sm-12 col-md-8">
+                        <div id="primary" class="content-area">
+                            <main id="main" class="site-main" role="main">
+                            <% for(var i = 0; i < 3;i++) { %>
+                                <article class="post-130 post type-post status-publish format-standard hentry category-portfolio">
+                                    <div class="blog-item-wrap">
+                                        <div class="post-inner-content">
+                                            <header class="entry-header page-header">
+                                                <h2 class="entry-title"><a href="http://127.0.0.1:3000/posts/article/<%= result[i].time %>"><%= result[i].title %></a></h2>  
+                                                <div class="entry-meta">
+                                                </div>  
+                                            </header>
+                                            <div class="entry-content">
+                                                <p><%= result[i].content %></p>
+                                                <p class="entry-btn"><a class="btn btn-default read-more" href="http://127.0.0.1:3000/posts/article/<%= result[i].time %>">阅读全文</a></p>   
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            <% } %>
+                            </main>
+                        </div>
+                    </div>
+                    <div id="secondary" class="col-sm-12 col-md-4">
+                        <div class="well">
+                            <aside id="recent-posts-4" class="widget widget_recent_entries">
+                                <h3 class="widget-title">近期文章</h3>
+                                <ul>
+                                    <% for(var i = 0; i < result.length;i++) { %>
+                                        <li><a href="http://127.0.0.1:3000/posts/article/<%= result[i].time %>"><%= result[i].title %></a></li>
+                                    <% } %>
+                                </ul>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

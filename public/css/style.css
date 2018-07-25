@@ -1,0 +1,152 @@
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+body {
+    color: #3d464d;
+    background-color: #F2F2F2;
+    word-wrap: break-word;
+    font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei";
+    line-height: 1.8;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+header#masthead {
+    background-color: #363636;
+} 
+
+.navbar-brand {
+    color: #DADADA;
+    font-size: 20px;
+    margin: 13px 0;
+    font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei";
+}
+
+.main-content-area {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.side-pull-left .main-content-inner {
+    float: left;
+}
+
+.hentry {
+    margin: 0;
+}
+
+.blog-item-wrap {
+    margin-bottom: 50px;
+}
+
+.post-inner-content {
+    padding: 45px 50px;
+    background-color: #fff;
+    border: 1px solid #dadada;
+    border-top: none;
+}
+
+.page-header {
+    margin-top: 0;
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.entry-title {
+    margin-top: 0;
+}
+.entry-title {
+    color: #444;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.entry-title a {
+    color: #444;
+}
+
+.entry-title a:hover {
+    color: #DA4453;
+    /*text-decoration: none;*/
+}
+
+.entry-meta {
+    margin-bottom: 30px;
+}
+
+.entry-meta span {
+    margin-right: 10px;
+}
+
+.entry-content, .entry-summary {
+    margin: 1.5em 0 0;
+}
+
+.entry-btn {
+    overflow: auto;
+}
+
+ .well {
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #DADADA;
+    overflow: hidden;
+    clear: both;
+}
+
+#secondary .widget {
+    margin-bottom: 50px;
+    color: #C1C0C0;
+    overflow: hidden;
+}
+
+#secondary .widget > h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    margin-top: 0;
+    color: #636467;
+}
+
+.widget ul {
+    padding: 0;
+    line-height: 18px;
+    font-size: 14px;
+}
+
+.widget ul li {
+    list-style: none;
+    border-bottom: 1px solid #F2F2F2;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+#secondary .widget a {
+    color: #C1C0C0;
+}
+
+.btn-default {
+    color: #FFF;
+    text-transform: uppercase;
+    background-color: #DA4453;
+    border-color: #DA4453;
+    -webkit-transition: background-color 0.3s linear;
+    -moz-transition: background-color 0.3s linear;
+    -o-transition: background-color 0.3s linear;
+    transition: background-color 0.3s linear;
+}
+
+.btn-default:hover {
+    color: #FFF;
+    background-color: #363636;
+    border-color: #363636;
+}
+
+.read-more {
+    float: right;
+    margin-top: 10px;
+    font-size: 12px;
+    padding: 11px 13px;
+}
+
