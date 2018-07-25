@@ -1,19 +1,18 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <form method="post">
-            <div>
-              <label>标题</label>
-              <input type="text" name="title" value="<%= title %>">
+<%- include('header') %>
+        <div class="container">
+            <div class="rows">
+                <div class="col-md-10 col-md-offset-1">
+                    <form method="post">
+                        <div>
+                            <input type="text" name="title" class="title" value="<%= title %>">
+                        </div>
+                        <div>
+                            <textarea name="content" rows="15" class="content"><%= content %></textarea>
+                        </div>
+                        <input type="submit"  value="修改" class="btn btn-default btn-publish">
+                    </form>
+                </div>
             </div>
-            <div>
-              <label>内容</label>
-              <textarea name="content" rows="15"><%= content %></textarea>
-            </div>
-            <input type="submit"  value="修改">
-        </form>
+        </div>
     </body>
 </html>

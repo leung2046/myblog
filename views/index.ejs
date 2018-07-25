@@ -6,7 +6,7 @@
                         <div id="primary" class="content-area">
                             <main id="main" class="site-main" role="main">
                             <% if(result.length != 0) { %>
-                            <% for(var i = 0; i < result.length;i++) { %>
+                            <% for(var i = 0; i < result.length && i < 3;i++) { %>
                                 <article class="post-130 post type-post status-publish format-standard hentry category-portfolio">
                                     <div class="blog-item-wrap">
                                         <div class="post-inner-content">
@@ -16,7 +16,7 @@
                                                 </div>  
                                             </header>
                                             <div class="entry-content">
-                                                <p><%= result[i].content %></p>
+                                                <p><%- result[i].content %></p>
                                                 <p class="entry-btn"><a class="btn btn-default read-more" href="/posts/article/<%= result[i].time %>">阅读全文</a></p>   
                                             </div>
                                         </div>

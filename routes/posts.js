@@ -28,6 +28,9 @@ router.get('/', function (req, res) {
             console.log(err);
         }else{
             console.log(result);
+            for(var i = 0;i < result.length;i++){
+                result[i].content = marked(result[i].content);
+            }
             res.render('index',{
                 result: result
             });

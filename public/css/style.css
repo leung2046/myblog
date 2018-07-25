@@ -143,10 +143,23 @@ header#masthead {
     border-color: #363636;
 }
 
-.read-more {
+.read-more,.btn-publish {
     float: right;
     margin-top: 10px;
     font-size: 12px;
     padding: 11px 13px;
+}
+
+.title {
+    width: 100%;
+    height: 50px;
+    border: none;
+    margin-top: 40px;
+}
+
+.content {
+    width: 100%;
+    border: none;
+    margin-top: 20px;
 }
 
