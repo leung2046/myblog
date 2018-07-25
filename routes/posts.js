@@ -27,7 +27,6 @@ router.get('/', function (req, res) {
         if(err){
             console.log(err);
         }else{
-            console.log(result);
             for(var i = 0;i < result.length;i++){
                 result[i].content = marked(result[i].content);
             }
@@ -69,7 +68,6 @@ router.get('/article/:time', function (req, res) {
         if(err){
             console.log(err);
         }else{
-            console.log(result);
             var content = marked(result[0].content);
             res.render('article', {
                 title: result[0].title,
@@ -86,7 +84,6 @@ router.get('/edit/:time', function (req, res) {
         if(err){
             console.log(err);
         }else{
-            console.log(result);
             res.render('edit', {
                 title: result[0].title,
                 content: result[0].content
