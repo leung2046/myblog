@@ -10,13 +10,13 @@
                                     <div class="blog-item-wrap">
                                         <div class="post-inner-content">
                                             <header class="entry-header page-header">
-                                                <h2 class="entry-title"><a href="http://127.0.0.1:3000/posts/article/<%= result[i].time %>"><%= result[i].title %></a></h2>  
+                                                <h2 class="entry-title"><a href="/posts/article/<%= result[i].time %>"><%= result[i].title %></a></h2>  
                                                 <div class="entry-meta">
                                                 </div>  
                                             </header>
                                             <div class="entry-content">
                                                 <p><%= result[i].content %></p>
-                                                <p class="entry-btn"><a class="btn btn-default read-more" href="http://127.0.0.1:3000/posts/article/<%= result[i].time %>">阅读全文</a></p>   
+                                                <p class="entry-btn"><a class="btn btn-default read-more" href="/posts/article/<%= result[i].time %>">阅读全文</a></p>   
                                             </div>
                                         </div>
                                     </div>
@@ -31,7 +31,7 @@
                                 <h3 class="widget-title">近期文章</h3>
                                 <ul>
                                     <% for(var i = 0; i < result.length;i++) { %>
-                                        <li><a href="http://127.0.0.1:3000/posts/article/<%= result[i].time %>"><%= result[i].title %></a></li>
+                                        <li><a href="/posts/article/<%= result[i].time %>"><%= result[i].title %></a></li>
                                     <% } %>
                                 </ul>
                             </aside>
